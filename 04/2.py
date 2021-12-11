@@ -39,7 +39,7 @@ for board in boards_t:
         if max_line < board_min_max[board_idx]:
             board_min_max[board_idx] = max_line
     board_idx += 1
-win_round = min(board_min_max)
+win_round = max(board_min_max)
 winner = board_min_max.index(win_round)
 #print(win_round)
 #print(winner)
